@@ -37,4 +37,4 @@ An end-to-end, containerized batch processing pipeline built with **PySpark**, *
 ---
 
 ### 📫 Connect With Me
-* **LinkedIn:** [linkedin.com/in/your-profile]((https://www.linkedin.com/in/adityamishra-dataeng/))
+* **LinkedIn:** [adityamishra-dataeng](https://www.linkedin.com/in/adityamishra-dataeng/)
