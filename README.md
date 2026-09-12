@@ -1,15 +1,40 @@
-## Hi there 👋
+# Hi, I'm Aditya 👋
+**4th Year B.Tech Computer Science Student | Learning Data Engineering**
 
-I'm Aditya — a final-year Computer Science student building **production-style data pipelines**, not tutorial code. I like taking raw, messy data and turning it into something a business can actually query and trust.
-
-- 🔭 **Featured build:** [E-Commerce Data Engineering Pipeline](https://github.com/adityamishra-dataengineering/REPLACE_WITH_REPO_NAME) — an end-to-end batch pipeline on the Olist Brazilian E-Commerce dataset (~100K orders, 3,000+ sellers). Medallion architecture (Bronze/Silver/Gold), orchestrated with **Airflow**, transformed with **PySpark**, running on a 6-service **Dockerized** stack (MySQL, PostgreSQL, Spark, Airflow). Closed the loop with a **Tableau dashboard** on the Gold layer — sales concentration by state, category revenue, and profit trends.
-- 👯 Looking to collaborate on open-source ETL / data engineering projects.
-- 🤔 Looking for guidance on production-grade practices — testing, monitoring, CI/CD for data pipelines.
-- 💬 Ask me about **PySpark, Airflow, Docker, SQL, or Tableau**.
-- 📫 Reach me: [LinkedIn](https://www.linkedin.com/in/adityamishra-dataeng/) ·
-
-### 🛠️ Tools I use
-`PySpark` `Apache Airflow` `Docker` `SQL` `Python` `Tableau` 
+I build modular, containerized data pipelines and analytical data warehouses. I focus on core Data Engineering concepts: ETL orchestration, Medallion Architecture (Bronze/Silver/Gold), dimensional modeling, and Spark data processing.
 
 ---
-*Fresher, open to entry-level Data Engineering roles.*
+
+### 🛠️ Tech Stack & Skills
+
+* **Languages:** Python, SQL
+* **Data Processing & Orchestration:** PySpark, Apache Airflow, Pandas
+* **Data Warehousing & Storage:** MySQL (Star Schema Modeling)
+* **Infrastructure & Tools:** Docker, Docker Compose, VS Code
+* **Visualization & UI:** Tableau Public, Streamlit
+
+---
+
+### 🚀 Featured Project
+
+#### 📦 E-Commerce Data Engineering Pipeline & BI Dashboard
+An end-to-end, containerized batch processing pipeline built with **PySpark**, **Apache Airflow**, and **Docker** to transform ~100k raw e-commerce records into an optimized Star Schema Data Warehouse.
+
+* **Architecture:** Medallion Design (Bronze $\rightarrow$ Silver $\rightarrow$ Gold)
+  * **Bronze (Ingestion):** Ingested raw multi-table CSVs enforcing schema-on-read via PySpark.
+  * **Silver (Cleansing):** Automated null filtering, deduplication, order status filtering, and timestamp casting.
+  * **Gold (Warehouse):** Modeled data into a Star Schema (`fact_sales` + 4 dimension tables) and loaded into MySQL via JDBC.
+* **Orchestration:** Directed Acyclic Graphs (DAGs) in Apache Airflow managing task dependencies, retries, and execution flow.
+* **Monitoring & BI:** Built a custom Streamlit UI for system status/job control and a Tableau Public dashboard tracking $16.57M+ in processed metrics.
+
+---
+
+### 📊 Key Data Engineering Concepts Applied
+* **Dimensional Modeling:** Designing Star Schemas (`fact_sales`, `dim_customers`, `dim_products`, `dim_sellers`, `dim_time`).
+* **Data Hygiene:** Handling schema preservation, currency standardization, and filtering canceled/corrupted records.
+* **Containerization:** Running pipeline components across isolated Docker containers.
+
+---
+
+### 📫 Connect With Me
+* **LinkedIn:** [linkedin.com/in/your-profile]((https://www.linkedin.com/in/adityamishra-dataeng/))
